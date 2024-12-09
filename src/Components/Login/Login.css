@@ -1,0 +1,127 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full-screen background */
+.login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(91.08deg, #dbbcc4 9.68%, #f3dfd8 32.98%, #d8bfd0 75.7%, #b7b1d5 99.11%);
+}
+
+/* Login Form Container */
+.login-form {
+  background-color: white;
+  padding: 40px 60px; /* Adjusted padding for better alignment */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  height: 580px;
+  width: 1200px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically centers content */
+  align-items: center; /* Horizontally centers content */
+}
+
+/* Username Field */
+.input-field-container {
+  margin-bottom: 20px;
+  width: 100%; /* Ensures full container width alignment */
+  max-width: 500px; /* Keeps fields aligned centrally */
+}
+
+.login-input-label {
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #555;
+  font-weight: bold;
+}
+
+.login-input-field {
+  width: 100%; /* Takes up the available width */
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Password Field */
+.login-input-field {
+  width: 100%; /* Matches username field width */
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+/* Show Password Section */
+.showPassword {
+  display: flex;
+  align-items: center;
+  justify-content: start; /* Align checkbox and label to the left */
+  margin: 10px 0;
+  width: 100%; /* Keeps it aligned with input fields */
+  max-width: 500px;
+}
+
+.checkfield {
+  margin-right: 5px;
+}
+
+/* Submit Button */
+.login-button {
+  background-color: #4facfe;
+  color: white;
+  width: 100%; /* Matches form field width */
+  max-width: 500px; /* Consistent with input fields */
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  margin-top: 20px; /* Adds spacing between button and other elements */
+}
+
+.login-button:hover {
+  background-color: #00d2ff;
+}
+
+/* Error Message */
+.error-msg {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+  max-width: 500px; /* Ensures alignment with input fields */
+}
+.heading1{
+  font-size: 30px;
+}
+/* Responsive Behavior */
+@media (max-width: 768px) {
+  .login-form {
+    width: 90%;
+    padding: 20px 30px;
+  }
+
+  .login-input-label {
+    font-size: 13px;
+  }
+
+  .login-input-field,
+  .login-button {
+    font-size: 14px;
+  }
+
+  .showPassword {
+    font-size: 13px;
+  }
+}
