@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
   const location = useLocation();
 
   // Define routes where the header should be hidden
-  const hideHeaderRoutes = ['/login', '/notfound'];
+  const hideHeaderRoutes = ['/', '/notfound'];
 
   // Check if the current route matches one of the hideHeaderRoutes
   const hideHeader = hideHeaderRoutes.includes(location.pathname);
@@ -31,7 +31,7 @@ function App() {
     <Router>
       <Layout>
         <Routes>
-          <Route path="/login" element={<Login />} />
+          <Route path="/" element={<Login />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/quiz" element={<QuizGameRoute />} />
           <Route path="/results" element={<ResultsPage />} />

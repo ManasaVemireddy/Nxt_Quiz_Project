@@ -12,7 +12,7 @@ const Header = () => {
   };
 
   const handleLogoClick = () => {
-    navigate('/'); // Navigate to the home page
+    navigate('/home'); // Navigate to the home page
   };
 
   return (
