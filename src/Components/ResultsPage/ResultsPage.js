@@ -8,7 +8,7 @@ const ResultsPage = () => {
   const { correctAnswers, totalQuestions } = state;
 
   const isWinner = correctAnswers > 5;
-  const percentage = ((correctAnswers / totalQuestions) * 100); // Calculate percentage with 2 decimal points
+  const percentage = ((correctAnswers / totalQuestions) * 100); 
 
   const handleReportClick = () => {
     navigate('/report', { state });

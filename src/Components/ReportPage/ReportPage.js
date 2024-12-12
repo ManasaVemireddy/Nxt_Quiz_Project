@@ -8,7 +8,7 @@ const ReportPage = () => {
   const { quizData, userAnswers } = state;
 
   const handleGoBack = () => {
-    navigate('/');
+    navigate('/home');
   };
 
   let correctCount = 0;
