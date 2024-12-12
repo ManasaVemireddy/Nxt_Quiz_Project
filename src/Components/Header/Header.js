@@ -8,7 +8,7 @@ const Header = () => {
 
   const handleLogout = () => {
     Cookies.remove('jwt_token');
-    navigate('/login');
+    navigate('/');
   };
 
   const handleLogoClick = () => {
